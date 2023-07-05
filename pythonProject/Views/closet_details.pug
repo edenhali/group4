@@ -1,0 +1,34 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title View
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_userCloset.css')
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_style.css')
+  body
+    include toolbar_2.pug
+    div(id="toolbar-container")
+    div(class="container1")
+      div(class="introDiv")
+        h1 Cloth information
+        p
+          | Discover more information about the clothing item, including its ratings, by viewing the details below
+      form(class="detailsContainer", action=`/clothes/${cloth}/rating`, method="post")
+        div(class="imgContainer")
+          img(src=`/${picture}`, alt='Cloth Image', style= 'max-height: 40vh;')
+        ul
+          li
+            b Category: #{category}
+          li
+            b Color: #{color}
+          li
+            b Fabric Type: #{fabricType}
+          li
+            b Size: #{size}
+          li
+            b Style: #{style}
+          li
+            b Goal: #{goal}
+        div(class="detButton")
+          input(type="hidden", name="serialNumber", value=serialNumber)
+          input(type="hidden", name="view", value=view)
+          button#showRating(type="submit") Show Rating

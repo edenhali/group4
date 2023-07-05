@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Sign up
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_signup.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+  body
+    div(class="container1")
+      form(class="signupContainer", action="/createNewUser", method="post")
+        h1
+          | Sign up
+        div(class="signup")
+          label(for='email') Email:
+          input(id="email",type='email', name='email', required='')
+        br
+        div(class="signup")
+          label(for='firstName') First Name:
+          input(id='firstName',type='text', name='firstName', required='')
+        br
+        div(class="signup")
+          label(for='lastName') Last Name:
+          input(id="lastName",type='text', name='lastName', required='')
+        br
+        div(class="signup")
+          label(for='password') Password:
+          input(id="password",type='password', name='password', required='')
+        br
+        div(class="signup")
+          label(for='city') City:
+          select(id="city",name='city')
+            option(value="") Select city:
+                    each n in city
+                        option(value=n.city) #{n.city}
+        br
+        div(class="signup")
+          label(for='picture') Profile picture:
+          input(id="picture",type='file', name='picture', accept='.png, .jpg, .jpeg')
+          br
+        div(class="signup")
+          label(for='phoneNumber') Phone Number:
+          input(id="phoneNumber",type='tel', name='phoneNumber', pattern='[0-9]{10}', required='')
+          br
+        div(class="signup")
+          label(for='dob') Birthday:
+          input(id="dob",type='date', name='dob', required='')
+          br
+        div(class="errorMsg")
+          p #{v1}
+        div
+          button(id="signupBtn",type='submit', name='submit', aria-label='Sign up') Sign up
+      div(class="social-login")
+        p or sign up with:
+        button.facebook(onclick="location.href='https://www.facebook.com'") Sign up with Facebook
+        button.google(onclick="location.href='https://mail.google.com'") Sign up with Google
+  

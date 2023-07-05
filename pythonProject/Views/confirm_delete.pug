@@ -1,0 +1,13 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Confirm Delete
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_style.css')
+  body
+    h1 Confirm Delete
+    p Are you sure you want to delete the cloth: #{serialNumber}?
+    form(action=`/clothes/${serialNumber}/confirm_delete`, method="post")
+      input(type="hidden", name="serialNumber", value=serialNumber)
+      button(type="submit") Yes
+    form(action="/MyCloset", method="get")
+      button(type="submit") No, go back

@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Request item
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/request_item.css')
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_style.css')
+  body
+    include toolbar_2.pug
+    #toolbar-container
+    .container1
+      .introDiv
+        h1 Item Request
+        p You have great taste! Don't let this item slip away - apply today and make it yours.
+      form(class='formContainer', action=`/clothes/${cloth}/addRequest`, method="post")
+        img#clothImage(src=picture, alt='Cloth Image')
+        .request
+          input(type='hidden', name='serialNumber', value=serialNumber)
+        .request
+          label(for='startDate') Start of rental:
+          input#startDate(type='date', name='startDate', required)
+        .request
+          if goal === 'rent'
+            label(for='endDate') End of rental:
+            input#endDate(type='date', name='endDate', required)
+        .request
+          label(for='textBox') Additional requests:
+          input#textBox(name='textBox')
+        button#submitBtn(type='submit') Send the request
+      script(src='/Static/JS/request_item.js')

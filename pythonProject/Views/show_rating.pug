@@ -1,0 +1,61 @@
+doctype html
+html(lang='en')
+  head
+    title Cloth Rating
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/show_rating.css')
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_style.css')
+  body
+    include toolbar_2.pug
+    #toolbar-container
+      .container1
+        .introDiv
+          h1 Cloth Rating
+          p
+            | Our rating system takes into account factors that help you make informed decisions about the clothing items
+            | in your closet
+        form(class='formContainer', action=`/clothes/${cloth}/requestItem`, method="post")
+          #clothInfo
+            img#clothImage(src=`/${picture}`, alt='Cloth Image')
+            if result.length === 0
+                  div(class="note")
+                    | The garment has not been rated yet
+            else
+              ul.rateUl
+                li
+                  span.rating-label 
+                  span#cleanlinessRating.rating-stars
+                    each _ in Array(5)
+                      if result && (result.avg_cleanliness !== null && result.avg_cleanliness > _)
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+                li
+                  span.rating-label 
+                  span#qualityRating.rating-stars
+                    each _ in Array(5)
+                      if result && (result.avg_quality !== null && result.avg_quality > _)
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+                li
+                  span.rating-label
+                  span#reliabilityRating.rating-stars
+                    each _ in Array(5)
+                      if result && (result.avg_reliability !== null && result.avg_reliability > _)
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+                li
+                  span.rating-label 
+                  span#averageRating.rating-stars
+                    each _ in Array(5)
+                      if result && (result.avg_cleanliness !== null && result.avg_quality !== null && result.avg_reliability !== null && Math.floor((result.avg_cleanliness + result.avg_quality + result.avg_reliability) / 3) > _)
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+          .button-container
+            if view === 'true'
+              button#requestItemBtn(type='submit') Request Item
+            button#backBtn(type='button', onclick='window.history.back()') Back to details
+          input(type="hidden", name="serialNumber", value=clothSerialNumber)
+    script(src='/Static/JS/show_rating.js')

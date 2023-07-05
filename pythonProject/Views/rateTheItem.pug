@@ -1,0 +1,65 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Rate
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/rate_item.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+    script(src='../Static/JS/rate_item.js')
+  body
+    include toolbar.pug
+    div(id="toolbar-container")
+    div(class="container1")
+        h1 My rate
+        form(action="/RateTheItem", method="post")
+                      img(src=`${picture}`, style= 'max-height: 50vh;')
+                      input(type="hidden", name="serialNumberRequest", value=requestSerialNumber)
+                      div(class="rating")
+                        label Cleanliness:
+                        div(class="ratingCleanliness" style="--rating: 3.5;")
+                          input(type="radio" id="starC5" name="ratingCleanliness" value="5")
+                          label(for="starC5") 5
+                          input(type="radio" id="starC4" name="ratingCleanliness" value="4")
+                          label(for="starC4") 4
+                          input(type="radio" id="starC3" name="ratingCleanliness" value="3")
+                          label(for="starC3") 3
+                          input(type="radio" id="starC2" name="ratingCleanliness" value="2")
+                          label(for="starC2") 2
+                          input(type="radio" id="starC1" name="ratingCleanliness" value="1")
+                          label(for="starC1") 1
+                      br
+                      div(class="rating")
+                        label Quality:
+                        div(class="ratingQuality" style="--rating: 3.5;")
+                          input(type="radio" id="starQ5" name="ratingQuality" value="5")
+                          label(for="starQ5") 5
+                          input(type="radio" id="starQ4" name="ratingQuality" value="4")
+                          label(for="starQ4") 4
+                          input(type="radio" id="starQ3" name="ratingQuality" value="3")
+                          label(for="starQ3") 3
+                          input(type="radio" id="starQ2" name="ratingQuality" value="2")
+                          label(for="starQ2") 2
+                          input(type="radio" id="starQ1" name="ratingQuality" value="1")
+                          label(for="starQ1") 1
+                      br
+                      div(class="rating")
+                        label Reliability:
+                        div(class="ratingReliability" style="--rating: 3.5;")
+                          input(type="radio" id="starR5" name="ratingReliability" value="5")
+                          label(for="starR5") 5
+                          input(type="radio" id="starR4" name="ratingReliability" value="4")
+                          label(for="starR4") 4
+                          input(type="radio" id="starR3" name="ratingReliability" value="3")
+                          label(for="starR3") 3
+                          input(type="radio" id="starR2" name="ratingReliability" value="2")
+                          label(for="starR2") 2
+                          input(type="radio" id="starR1" name="ratingReliability" value="1")
+                          label(for="starR1") 1
+                      br
+                      label(for='Checkbox') I returned the item
+                      input(type="checkbox" id="Checkbox" name="Checkbox" value="isChecked" required)
+                      br
+                      input(id="comment-input",name="text", placeholder="Add your comment here")
+                      br
+                      br
+                      button(type='submit') Rate

@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Results
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/search_res.css')
+  body
+    include toolbar.pug
+    div(id="toolbar-container")
+    div(class="container1")
+      h1(class="h1")
+        | Search Results
+      p(class="p")
+        | Here are the search results for your choices, explore the options below to find your perfect match.
+      ul(class="searchData")
+        each result in res
+          li
+            img(src=result.cloth.picture)
+            form(action=`/clothes/${result.cloth.serialNumber}/view`, method="post")
+              input(type="hidden", name="serialNumber", value=result.cloth.serialNumber)
+              input(type="hidden", name="view", value="true")
+              button.photo-option(type="submit") View details

@@ -1,0 +1,30 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title My closet
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_userCloset.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+  body
+    include toolbar.pug
+    div#toolbar-container
+      div.closetContainer
+        div.userContainer
+          div.my-profile
+            img(src=profilePicture, alt='profilePicture')
+            h1.my-closet My Closet
+          div.userData
+            p= firstName
+            p= lastName
+        ul.photo-grid
+          each cloth, index in serialNumbersUserClothes
+            li
+              div.photo-wrapper
+                img(src=pictures[index], alt=cloth)
+                div.photo-options
+                  form(action=`/clothes/${cloth}/view`, method="post")
+                    input(type="hidden", name="serialNumber", value=serialNumbersUserClothes[index])
+                    input(type="hidden", name="view", value="false") 
+                    button.photo-option(type="submit") View details
+                  form(action=`/clothes/${cloth}/delete`, method="post")
+                    input(type="hidden", name="serialNumber", value=serialNumbersUserClothes[index])
+                    button.photo-option(type="submit") Delete

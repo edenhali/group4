@@ -1,0 +1,156 @@
+serialNumber ,serialNumberRequests,cleanliness ,quality ,reliability ,userText 
+1,1,5,4,3,I love the vibrant colors of this dress! It's perfect for summer.
+2,4,1,3,2,These jeans fit me like a glove. So comfortable!
+3,11,4,4,1,The intricate embroidery on this top is stunning.
+4,19,3,3,4,I can't get enough of this cozy sweater. It's so warm and stylish.
+5,24,4,4,3,This skirt has such a fun and flirty silhouette.
+6,25,3,1,1,The material of this shirt is so soft and breathable.
+7,28,5,3,3,I'm obsessed with the unique pattern on these leggings.
+8,32,5,2,2,This blazer adds a touch of sophistication to any outfit.
+9,36,4,2,3,The detailing on this jacket is edgy and cool.
+10,42,5,5,3,I feel like a princess in this elegant evening gown.
+11,48,5,4,1,These shoes are not only stylish but also surprisingly comfortable.
+12,50,4,3,3,I love the versatility of this jumpsuit. It can be dressed up or down.
+13,52,5,2,5,This hat completes my summer look perfectly.
+14,56,4,4,5,The quality of this leather jacket is outstanding.
+15,67,5,2,2,I feel so confident in this tailored suit.
+16,68,2,1,4,This scarf adds a pop of color to my neutral outfits.
+17,71,1,3,4,"These boots are made for walking, and they look fabulous too!"
+18,72,1,2,3,I'm in love with the vintage-inspired design of this dress.
+19,83,4,3,4,The cutouts on this top add a trendy twist.
+20,87,4,4,2,These shorts are so lightweight and ideal for hot weather.
+21,89,1,3,3,I can't resist the charm of this polka dot print.
+22,94,1,3,4,This handbag is not only stylish but also practical with its multiple compartments.
+23,96,3,3,4,I feel like a rockstar in this leather jacket.
+24,98,1,4,1,The fit of these pants is incredibly flattering.
+25,103,2,3,4,This blouse has such delicate and feminine details.
+26,111,4,4,2,I adore the bohemian vibes of this flowy maxi dress.
+27,112,1,1,4,The ruffles on this blouse give it a romantic touch.
+28,117,3,1,2,I can't get enough of these high-waisted jeans. They accentuate my curves.
+29,118,4,3,2,"This hoodie is so cozy, I never want to take it off."
+30,125,3,1,5,I feel like a trendsetter in this statement piece.
+31,128,3,5,2,The material of this t-shirt feels luxurious against my skin.
+32,129,1,5,2,This dress hugs my body in all the right places.
+33,131,1,3,5,"I'm loving the athleisure trend, and these joggers are a must-have."
+34,132,1,5,1,This cardigan is perfect for layering during the colder months.
+35,137,1,2,3,I'm obsessed with the retro vibes of this vintage-inspired dress.
+36,139,4,2,4,These sunglasses add a touch of glamour to any outfit.
+37,145,2,3,3,I feel so elegant in this lace dress. It's perfect for special occasions.
+38,148,1,5,1,This shirt dress is effortlessly chic and comfortable.
+39,154,5,2,3,The color palette of this sweater is so calming and soothing.
+40,156,1,4,5,I can't resist the softness of this cashmere scarf.
+41,158,5,2,3,These leggings have the perfect amount of compression for my workouts.
+42,167,4,5,4,I love the distressed details on these jeans. They give them a cool edge.
+43,168,1,5,3,This blazer instantly elevates any outfit and makes me feel empowered.
+44,170,1,1,1,The floral print on this skirt is so vibrant and cheerful.
+45,175,5,5,2,I can't get enough of this off-the-shoulder top. It's so trendy!
+46,178,5,2,3,These boots are a classic staple in my wardrobe.
+47,179,2,3,3,This dress is perfect for a summer garden party.
+48,181,4,4,3,The pleated design of this skirt gives it a playful and flirty look.
+49,182,2,3,2,I feel like a boss in this tailored suit. It exudes confidence.
+50,186,4,4,5,"This sweater is oversized and cozy, perfect for snuggling up on a cold day."
+51,189,2,2,3,I love the unique cutout details on this blouse.
+52,191,3,1,3,These wide-leg pants make me feel like I'm walking on a runway.
+53,194,4,5,3,The pattern on this dress is so eye-catching. I always get compliments when I wear it.
+54,198,1,2,1,I can't resist the charm of this vintage-inspired hat.
+55,200,2,3,2,This blazer is a staple in my work wardrobe. It's versatile and professional.
+56,203,3,5,3,"The fabric of this shirt is so lightweight and breathable, perfect for summer."
+57,204,1,4,5,These sneakers are not only stylish but also great for my daily walks.
+58,205,2,1,1,I feel like a boho goddess in this flowy maxi skirt.
+59,209,2,1,1,The distressed details on these jeans give them a cool and edgy look.
+60,210,3,4,2,I love the versatility of this little black dress. It's a wardrobe essential.
+61,217,3,1,4,This jacket is perfect for transitional weather. It's lightweight yet keeps me warm.
+62,221,3,5,4,I feel like a million bucks in this sequined cocktail dress.
+63,222,1,5,5,The color of this sweater is so rich and vibrant. It brightens up any gloomy day.
+64,225,5,4,5,These leggings have a high waistband that offers great tummy control.
+65,228,1,1,4,I can't resist the allure of this silky slip dress. It's so feminine and elegant.
+66,232,3,2,5,This button-down shirt is a classic staple in my wardrobe. It's timeless and versatile.
+67,234,4,4,3,The embroidery on this denim jacket adds a fun and playful element.
+68,235,2,3,5,These heels are not only fashionable but also surprisingly comfortable to wear.
+69,243,1,4,4,I love the sporty vibe of these track pants. They're perfect for a casual day out.
+70,245,1,3,2,This dress has a flattering wrap design that accentuates my curves.
+71,246,1,2,4,The cutouts on these sandals give them a trendy and modern look.
+72,252,3,4,4,I feel so chic and sophisticated in this tailored blazer.
+73,253,3,2,4,This skirt has such a unique and artistic print. It's a conversation starter.
+74,254,2,3,5,I'm in love with the luxurious feel of this velvet dress. It's so glamorous.
+75,255,5,1,1,These leggings have a compression fit that keeps everything in place during my workouts.
+76,257,5,5,2,I feel like a bohemian princess in this flowy and romantic maxi dress.
+77,261,5,5,4,The distressed details on these shorts give them a cool and edgy vibe.
+78,266,3,2,5,This trench coat is a classic and timeless piece that never goes out of style.
+79,274,5,4,2,I can't get enough of this cozy and oversized sweater. It's perfect for lounging.
+80,279,5,1,5,I feel so confident in this power suit. It's professional and stylish at the same time.
+81,280,4,3,2,This blouse has such intricate lace detailing. It's feminine and elegant.
+82,284,1,2,2,I love the versatility of this denim skirt. It can be dressed up or down.
+83,291,5,4,5,These boots are a statement piece that adds a bold touch to any outfit.
+84,295,3,4,2,I'm loving the boho-chic vibes of this flowy top. It's perfect for summer festivals.
+85,296,4,5,5,The fit of this jumpsuit is so flattering. It accentuates my waist and elongates my legs.
+86,297,1,4,4,This hat is the perfect accessory to complete my beachy vacation look.
+87,300,3,2,5,I feel so stylish and sophisticated in this tailored blazer dress.
+88,306,4,2,2,The print on this blouse is so vibrant and eye-catching. It's a showstopper.
+89,315,3,4,4,These sneakers are not only comfortable but also trendy. They go well with any casual outfit.
+90,320,3,2,2,I can't resist the softness of this cashmere sweater. It's a luxurious treat.
+91,321,1,5,3,This skirt has such a fun and playful print. It always puts me in a good mood.
+92,333,2,5,5,I feel like a goddess in this flowy and ethereal maxi dress.
+93,335,2,2,3,The distressed denim of these jeans gives them a cool and laid-back vibe.
+94,338,1,2,1,This blazer adds a polished and professional touch to any outfit.
+95,346,2,4,4,I love the intricate lace details on this dress. It's so romantic and feminine.
+96,352,4,2,3,These leggings have a high waistband that offers great tummy control and support.
+97,357,1,4,1,This jacket is so versatile. I can dress it up for a night out or wear it casually with jeans.
+98,358,2,5,3,I feel so chic and put-together in this tailored jumpsuit.
+99,361,5,1,5,The pattern on this scarf is so vibrant and adds a pop of color to any look.
+100,364,3,3,3,These boots are not only stylish but also comfortable for long walks.
+101,365,5,5,1,I love the dainty floral print on this dress. It's perfect for springtime.
+102,369,1,3,2,This blazer is such a classic piece. It's timeless and never goes out of style.
+103,377,5,4,4,The material of this blouse is so soft and silky. It feels luxurious against my skin.
+104,379,3,1,3,"I'm obsessed with the distressed details on these jeans. They give them a cool, edgy vibe."
+105,383,5,5,5,This sweater is so cozy and warm. It's perfect for chilly winter days.
+106,384,1,4,3,I feel like a fashion icon in this statement coat. It's a true showstopper.
+107,389,3,4,5,The fit of this dress is so flattering. It hugs my curves in all the right places.
+108,391,2,3,1,I can't resist the charm of this vintage-inspired hat. It adds a retro touch to any outfit.
+109,392,2,3,2,These sneakers are not only stylish but also practical for long walks or workouts.
+110,394,4,3,4,This dress has such a beautiful and intricate lace pattern. It's absolutely stunning.
+111,397,5,1,2,I love the versatility of this cardigan. It's perfect for layering and adds a cozy touch.
+112,398,5,3,5,These pants have a wide-leg silhouette that makes me feel effortlessly chic.
+113,400,3,2,3,This blouse has such elegant and feminine ruffle details. It's a timeless piece.
+114,405,4,4,1,"I feel so confident in this tailored suit. It's sleek, modern, and exudes sophistication."
+115,409,2,4,2,The vibrant print on this skirt is so eye-catching. It's a statement piece for sure.
+116,413,1,4,5,These boots are not only fashionable but also comfortable for all-day wear.
+117,414,4,4,2,This dress is so versatile. I can dress it up with heels or dress it down with sneakers.
+118,415,1,5,4,The texture of this sweater is so cozy and soft. It's like a warm hug.
+119,416,4,3,2,I can't resist the vintage-inspired charm of this dress. It's a true retro beauty.
+120,417,2,2,2,This blazer adds an instant polish to any outfit. It's a wardrobe staple for me.
+121,424,2,3,2,The cutout details on this top give it a trendy and modern look.
+122,428,2,3,2,These jeans fit me like a glove. They're so flattering and comfortable.
+123,429,2,4,5,I'm in love with the unique pattern on these leggings. They make a bold statement.
+124,436,1,2,5,This jacket is so stylish and edgy. It adds a cool factor to any outfit.
+125,437,3,4,1,I feel like a princess in this elegant evening gown. It's a show-stopping piece.
+126,439,3,1,5,These shoes are not only fashionable but also surprisingly comfortable to walk in.
+127,448,2,5,2,This jumpsuit is my go-to outfit for both casual and dressy occasions. So versatile!
+128,449,4,1,1,The material of this shirt is so soft and breathable. It's perfect for everyday wear.
+129,451,3,5,5,I'm obsessed with the trendy design of this handbag. It's a real fashion statement.
+130,452,3,4,2,I feel like a rockstar in this leather jacket. It adds an edgy touch to my outfits.
+131,459,1,5,2,The fit of these pants is incredibly flattering. They make my legs look long and lean.
+132,462,2,5,3,This blouse has such delicate and feminine details. It's a romantic piece.
+133,464,2,5,2,I adore the bohemian vibes of this flowy maxi dress. It's perfect for summer festivals.
+134,467,5,3,2,The ruffles on this blouse give it a charming and playful look.
+135,468,2,1,1,I can't get enough of these high-waisted jeans. They emphasize my waist beautifully.
+136,473,5,5,5,This hoodie is so cozy and comfortable. It's my go-to loungewear essential.
+137,479,1,3,2,I feel like a trendsetter in this unique and eye-catching piece.
+138,480,1,1,5,The fabric of this t-shirt is so soft and lightweight. It's a dream to wear.
+139,484,4,5,2,This dress hugs my body in all the right places. It's so flattering.
+140,487,3,5,2,"I'm loving the athleisure trend, and these joggers are a must-have in my wardrobe."
+141,489,1,2,2,This cardigan is perfect for layering in the colder months. It keeps me warm and stylish.
+142,490,2,4,2,I feel so elegant in this lace dress. It's perfect for special occasions.
+143,492,2,1,1,This shirt dress is effortlessly chic and comfortable. It's my go-to for a casual yet put-together look.
+144,493,3,1,5,The color palette of this sweater is so calming and soothing. It's a cozy essential.
+145,496,2,4,5,I can't resist the softness of this cashmere scarf. It adds a touch of luxury to any outfit.
+146,497,1,2,2,"These leggings have the perfect amount of compression, making them ideal for workouts."
+147,501,5,1,3,I love the distressed details on these jeans. They give them a cool and edgy vibe.
+148,504,5,2,3,This blazer instantly elevates any outfit and makes me feel powerful and confident.
+149,511,1,5,2,The floral print on this skirt is so vibrant and adds a pop of color to my wardrobe.
+150,517,2,5,3,"These boots are made for walking, and they look fabulous too! They're my go-to footwear."
+151,518,3,3,4,This dress is perfect for a summer garden party. It's feminine and elegant.
+152,519,1,3,5,The pleated design of this skirt gives it a playful and flirty look. I love twirling in it!
+153,523,4,2,5,I feel like a boss in this tailored suit. It exudes confidence and professionalism.
+154,527,1,3,5,"This sweater is oversized and cozy, perfect for snuggling up on a chilly day. I love its relaxed fit."
+155,534,1,3,5,This sweater is oversized and cozy. I highly recommand!

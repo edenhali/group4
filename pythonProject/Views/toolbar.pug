@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title ToolBar
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css', crossorigin='anonymous', referrerpolicy='no-referrer')
+    link(rel='stylesheet', href='../Static/CSS/closet_style.css')
+  body
+    nav
+      div(class="Toolbar")
+        div(class="logo")
+          img(src='../Static/photosFolder/LOGO.png', alt='LOGO')
+        ul(class="menu")
+          li
+            a(href='/MyCloset')
+              img(src='../Static/photosFolder/CLOSET%20ICON.png', alt='My Closet')
+              | My closet
+          li
+            a(href='/AddItem')
+              img(src='../Static/photosFolder/ADD%20ICON1.png', alt='Add an Item')
+              | Add an item
+          li
+            a(href='/RequestsFromMyCloset')
+              img(src='../Static/photosFolder/REQUESTICON1.png', alt='Requests')
+              | Requests from my closet
+          li
+            a(href='/MyOrders')
+              img(src='../Static/photosFolder/RETURN%20ICON.png', alt='orders')
+              | My orders
+          li
+            a(href='/SearchItems')
+              img(src='../Static/photosFolder/searchIcon.png', alt='search')
+              | Search
+          li(id="logOut")
+            a(href='/LogOut')
+              img(src='../Static/photosFolder/LogOutIcon.png', alt='Logout')
+              | Log-out
+

@@ -1,0 +1,83 @@
+serialNumber ,user ,cloth ,startDate ,notes,isApproved,endDate
+1,example73@fastmail.com,94,2020-01-02,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet leo. Ut vulputate eleifend sem, id consectetur mi imperdiet sit amet.",yes,
+2,example89@live.com,90,2020-01-06,,yes,
+3,example41@gmail.com,122,2020-01-16,,yes,2020-01-21
+4,example82@yahoo.com,12,2020-01-23,,yes,2020-02-01
+5,example13@zoho.com,38,2020-02-04,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+6,example20@protonmail.ch,119,2020-02-14,,no,
+7,example20@protonmail.ch,45,2020-02-15,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2020-02-20
+8,example96@mailinator.com,108,2020-02-24,"Sed dapibus, magna id congue finibus, justo metus posuere urna, at elementum tellus lacus vel erat.",no,
+9,example33@fastmail.com,39,2020-02-29,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,null,
+10,example58@domain.com,83,2020-03-01,Aenean mattis fermentum nunc at mattis. Nunc pharetra quam ac elit congue posuere.,yes,
+11,example89@live.com,99,2020-03-05,,yes,2020-03-10
+12,example96@mailinator.com,41,2020-03-17,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,null,
+13,example85@aol.com,13,2020-04-07,,yes,
+14,example73@fastmail.com,21,2020-04-09,,null,
+15,example6@icloud.com,46,2020-04-16,Morbi temhtyhytpus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+16,example98@domain.com,30,2020-04-23,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2020-04-25
+17,example38@domain.com,5,2020-04-26,,yes,2020-05-04
+18,example57@tutanota.com,88,2020-04-28,,yes,2020-05-03
+19,example82@yahoo.com,48,2020-04-30,,yes,2020-05-02
+20,example67@mail.com,28,2020-05-06,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,
+21,example24@icloud.com,35,2020-05-12,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+22,example32@rocketmail.com,76,2020-05-13,,no,
+23,example58@domain.com,88,2020-05-28,,no,
+24,example10@yandex.com,26,2020-05-30,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+25,example64@icloud.com,9,2020-05-31,,no,
+26,example85@aol.com,7,2020-06-09,,no,
+27,example9@live.com,10,2020-06-11,,no,
+28,example61@outlook.com,19,2020-06-21,,yes,2020-06-24
+29,example95@fastmail.com,107,2020-06-27,,no,
+30,example45@aol.com,121,2020-07-19,,no,
+31,example17@tutanota.com,115,2020-07-22,,no,
+32,example59@msn.com,86,2020-08-01,,null,
+33,example46@icloud.com,33,2020-08-03,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+34,example89@live.com,2,2020-08-05,,yes,2020-08-08
+35,example46@icloud.com,45,2020-08-09,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2020-08-11
+36,example38@domain.com,19,2020-08-16,,yes,2020-08-18
+37,example92@gmx.com,121,2020-08-19,,yes,2020-08-21
+38,example72@rocketmail.com,114,2020-08-22,,yes,
+39,example42@yahoo.com,104,2020-08-25,,no,
+40,example4@outlook.com,22,2020-08-28,,no,
+41,example86@icloud.com,99,2020-09-03,,yes,2020-09-08
+42,example54@rocketmail.com,79,2020-09-07,,no,
+43,example93@zoho.com,3,2020-09-12,,no,
+44,example63@gmail.com,82,2020-09-19,,no,
+45,example14@rocketmail.com,109,2020-09-22,,yes,
+46,example54@rocketmail.com,104,2020-09-23,,no,
+47,example22@yahoo.com,19,2020-09-24,,no,
+48,example10@yandex.com,112,2020-09-30,,yes,2020-10-05
+49,example86@icloud.com,30,2020-10-16,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2020-10-18
+50,example71@zoho.com,47,2020-10-26,,no,
+51,example60@protonmail.ch,107,2020-11-02,,yes,
+52,example63@gmail.com,77,2020-11-05,,yes,2020-11-10
+53,example11@inbox.com,100,2020-11-06,,no,
+54,example29@aol.com,106,2020-11-08,,yes,2020-11-13
+55,example19@msn.com,113,2020-11-20,,no,
+56,example89@live.com,19,2020-11-27,,no,
+57,example70@gmx.com,116,2020-11-29,,yes,
+58,example75@protonmail.com,15,2020-12-13,,no,
+59,example86@icloud.com,30,2020-12-28,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2020-12-30
+60,example100@protonmail.ch,73,2023-01-11,,yes,
+61,example5@aol.com,113,2023-01-13,,yes,2023-01-21
+62,example20@protonmail.ch,95,2022-01-24,,yes,2022-01-26
+63,example61@outlook.com,16,2021-02-15,,null,
+64,example98@domain.com,6,2021-02-24,,no,
+65,example23@gmail.com,118,2021-03-03,,yes,2021-03-05
+66,example64@icloud.com,49,2021-03-10,,yes,2021-03-19
+67,example61@outlook.com,104,2021-03-13,,yes,
+68,example55@fastmail.com,35,2021-03-19,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,
+69,example87@protonmail.com,95,2021-03-22,,yes,2021-03-27
+70,example68@live.com,2,2021-03-26,,yes,2021-03-31
+71,example54@rocketmail.com,85,2021-04-03,,yes,
+72,example16@mailinator.com,110,2021-04-05,,yes,
+73,example76@mailinator.com,102,2021-04-12,,yes,2021-04-14
+74,example46@icloud.com,101,2021-04-13,,no,
+75,example36@mailinator.com,19,2021-04-19,,yes,2021-04-21
+76,example31@zoho.com,24,2021-05-09,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,no,
+77,example43@hotmail.com,20,2021-05-10,,yes,
+78,example21@outlook.com,47,2021-05-11,,yes,
+79,example57@tutanota.com,31,2021-05-18,Morbi tempus orci a massa feugiat lobortis. Nullam id feugiat metus.,yes,2021-05-21
+80,example34@inbox.com,115,2021-05-20,,yes,
+81,example48@mail.com,119,2021-05-26,,yes,2021-05-31
+82,example29@aol.com,108,2021-05-31,,yes,

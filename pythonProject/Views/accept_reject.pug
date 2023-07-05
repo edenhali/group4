@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Requests from my closet
+    link(rel='stylesheet', href='../Static/CSS/accept_reject.css')
+    link(rel='stylesheet', href='../Static/CSS/closet_style.css')
+  body
+    include toolbar.pug
+    div(id="toolbar-container")
+    div(class="container1")
+      h1 Request from my closet
+      table(id="results" class="requestsFromMyCloset")
+          tr
+                th The item
+                th The user
+                th Start Date
+                th End Date
+                th Accept/Reject? 
+          each n in data
+                tr 
+                td
+                  img(src=`${n.picture}`, style= 'max-height: 50vh;')
+                td #{n.userConnect}
+                td #{n.startDate.toLocaleDateString()}
+                td
+                  if n.endDate !== null && typeof n.endDate !== 'undefined'
+                      != n.endDate.toLocaleDateString()
+
+                td
+                  if (n.isApproved === null || n.isApproved === 'null')
+                    form(action="/updateReq", method="post")
+                      input(type="hidden", name="serialNumberCloth", value=n.cloth)
+                      input(type="hidden", name="serialNumberRequest", value=n.request)
+                      div(class="button-group")
+                        button(value="accept", name="accept", class="bold") Accept
+                        button(value="reject", name="reject", class="bold") Reject
+                  if (n.isApproved === 'yes')
+                    | This request has been approved.
+                  if (n.isApproved === 'no')
+                    | This request has been rejected.

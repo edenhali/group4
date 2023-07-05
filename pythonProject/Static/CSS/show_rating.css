@@ -1,0 +1,44 @@
+.formContainer {
+    background: seashell;
+}
+
+#clothInfo {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.note {
+    margin: 10vh;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#clothImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#clothRating {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #888;
+}
+
+.btmReq button {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.rateUl {
+    display: grid;
+    list-style-type: none;
+    gap: 4px;
+}
+
+li {
+    font-size: 16px;
+}

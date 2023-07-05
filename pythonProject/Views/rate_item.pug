@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Rate
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/rate_item.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+    script(src='../Static/JS/rate_item.js')
+  body
+    include toolbar.pug
+    div(id="toolbar-container")
+    div(class="container1")
+        h1 My orders
+        p #{v1}
+        table(id="results" class="myOrders")
+          tr
+                th The item
+                th Approved?
+                th Notes
+                th Details 
+                th Rate
+          each n in data 
+                tr 
+                td 
+                    img(src=`${n.picture}`, style= 'max-height: 50vh;')
+                td 
+                    if (n.isApproved!='null')
+                      p #{n.isApproved} 
+                    else 
+                      p The user not responded yet
+                td #{n.notes}
+                td
+                    form(action=`/clothes/${cloth}/view`, method="post")
+                      input(type="hidden", name="serialNumber", value=n.cloth)
+                      button.photo-option(type="submit") View details
+                td 
+                  if n.isApproved === "yes"
+                    form(action=`/rateItem`, method="post")
+                      input(type="hidden", name="serialNumberC", value=n.cloth)
+                      input(type="hidden", name="serialNumberR", value=n.request)
+                      button.photo-option(type="submit") Rate the item
+                      

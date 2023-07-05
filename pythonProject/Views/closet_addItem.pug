@@ -1,0 +1,66 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Add an item
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_addItem.css')
+    link(rel='stylesheet', type='text/css', href='../Static/CSS/closet_style.css')
+  body
+    include toolbar.pug
+    div(id="toolbar-container")
+    div(class="container1")
+      div(class="introDiv")
+        h1  Add an item
+        p
+          | By adding your clothes to your wardrobe, you&apos;re helping someone in need to find their perfect fit.
+      form(class="formContainer", action="/AddCloth", method="post")
+        div(class="add")
+          label(for="category") Category:
+          select(id="category", name="category", required)
+            option(value="") Select category:
+            each n in category
+              option(value=n.category) #{n.category}
+        div(class="add")
+          label(for='colorPicker') Color:
+          select(id='colorPicker', name='colorPicker', required)
+            option(value="") Select color:
+            each n in color
+              option(value=n.color) #{n.color}
+        div(class="add")
+          label(for='fabricType') Fabric type:
+          select(id='fabricType', name='fabricType', required)
+            option(value="") Select fabric type:
+            each n in fabricType
+              option(value=n.fabricType) #{n.fabricType}
+        div(class="add")
+          label(for='size') Size:
+          select(id='size', name='size', required)
+            option(value="") Select size:
+            each n in size
+              option(value=n.size) #{n.size}
+        div(class="add")
+          label(for='Style') Style:
+          select(id='Style', name='Style', required)
+            option(value="") Select style:
+            each n in Style
+              option(value=n.style) #{n.style}
+        div(class="add")
+          label(for='goal') Goal:
+          select(id='goal', name='goal', required)
+            option(value="") Select goal:
+            each n in goal
+              option(value=n.goal) #{n.goal}
+        div(class="add")
+          label(for='city') City:
+          select(id='city', name='city', required)
+            option(value="") Select city:
+            each n in city
+              option(value=n.city) #{n.city}
+        div(class="add")
+          label(for='picture') Item picture:
+          input(id="picture", type='file', name='picture', accept='.png, .jpg, .jpeg', required='')
+          br
+        div(class="errorMsg")
+        div
+          button(id="addBtm", type='submit', name='submit', aria-label='Add') Add
+        p #{v1}

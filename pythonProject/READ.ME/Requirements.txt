@@ -1,0 +1,20 @@
+Requirements
+1.  Modules: express, mysql2, path, pug, body-parser, cookie-parser,csv2json
+2.  
+a. Create path: /createTable
+b. Insert path: /insertTable
+c. Delete path: /dropTable
+3. Table creation syntax:
+CREATE TABLE IF NOT EXISTS `rateNumbers`(rateNumber INT primary key not null)
+CREATE TABLE IF NOT EXISTS `goals`(goal VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `styles`(style VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `sizes`(size VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `fabricTypes`(fabricType VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `colors`(color VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `categories`(category VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `cities`(city VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `yesNo`(yesorno VARCHAR(255) primary key not null)
+CREATE TABLE IF NOT EXISTS `users`(email VARCHAR(255) primary key,firstname VARCHAR(255) not null,lastname VARCHAR(255) not null,password VARCHAR(255) not null,picture VARCHAR(1000),dob date not null,joinDate date not null,phoneNumber VARCHAR(11) not null,city VARCHAR(255) not null references cities(city))
+CREATE TABLE IF NOT EXISTS `clothes`(serialNumber INT not null,user VARCHAR(255) not null references users(email),category VARCHAR(255) not null references categories(category),color VARCHAR(255) not null references colors(color),fabricType VARCHAR(255) not null references fabricTypes(fabricType),size VARCHAR(255) not null references sizes(size),style VARCHAR(255) not null references styles(style),goal VARCHAR(255) not null references goals(goal),picture VARCHAR(1000) not null,available VARCHAR(255) not null references yesNo(yesorno),city VARCHAR(255) not null references cities(city),primary key(serialNumber,user))
+CREATE TABLE IF NOT EXISTS `requests`(serialNumber INT not null primary key,user VARCHAR(255) not null references users(email),cloth INT not null references clothes(serialNumber),startDate date not null,notes VARCHAR(255),isApproved varchar(4),endDate date)
+CREATE TABLE IF NOT EXISTS `rates` (serialNumber INT NOT NULL PRIMARY KEY,serialNumberRequests INT NOT NULL REFERENCES requests(serialNumber),cleanliness INT NOT NULL REFERENCES rateNumbers(rateNumber),quality INT NOT NULL REFERENCES rateNumbers(rateNumber),reliability INT NOT NULL REFERENCES rateNumbers(rateNumber),userText VARCHAR(255))

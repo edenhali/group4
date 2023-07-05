@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    title Cloth Rating
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/show_rating.css')
+    link(rel='stylesheet', type='text/css', href='/Static/CSS/closet_style.css')
+  body
+    include toolbar_2.pug
+    div(id="toolbar-container")
+    div(class="container1")
+        div(class="introDiv")
+          h1 Cloth Rating
+          p
+            | You have already rated the item
+        form.formContainer(action='/requestItem', method='post')
+          #clothInfo
+            img#clothImage(src=`/${picture}`, alt='Cloth Image')
+            ul.rateUl
+              li
+                span.rating-label 
+                span#cleanlinessRating.rating-stars
+                  each _ in Array(5)
+                    if result && result[0] && result[0].cleanliness !== null
+                      if _ < result[0].cleanliness
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+              li
+                span.rating-label 
+                span#qualityRating.rating-stars
+                  each _ in Array(5)
+                    if result && result[0] && result[0].quality !== null
+                      if _ < result[0].quality
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+              li
+                span.rating-label
+                span#reliabilityRating.rating-stars
+                  each _ in Array(5)
+                    if result && result[0] && result[0].reliability !== null
+                      if _ < result[0].reliability
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+              li
+                span.rating-label 
+                span#averageRating.rating-stars
+                  each _ in Array(5)
+                    if result && result[0] && result[0].cleanliness !== null && result[0].quality !== null && result[0].reliability !== null
+                      if _ < Math.floor((result[0].cleanliness + result[0].quality + result[0].reliability) / 3)
+                        i.fa.fa-star.filled-star
+                      else
+                        i.fa.fa-star.unfilled-star.gray-star
+              li
+                if result && result[0] && (result[0].cleanliness === null || result[0].quality === null || result[0].reliability === null)
+                  span The garment has not been rated yet
+              li
+                p Notes: #{result[0].userText}
+            
+          .button-container
+            button#backBtn(type='button', onclick='window.history.back()') Back to my orders
+            if sourcePage === 'specificPage'
+              button#requestItemBtn(type='submit', style='display:none') Request Item
+    script(src='/Static/JS/show_rating.js')

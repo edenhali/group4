@@ -1,0 +1,42 @@
+.search {
+    display: grid;
+    gap: 3px;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    justify-items: start;
+}
+
+.search_input {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: start;
+}
+
+.search_input p {
+    font-size: 18px;
+    font-style: oblique;
+}
+
+button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: papayawhip;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button i {
+    color: snow;
+    font-size: 15px;
+}
